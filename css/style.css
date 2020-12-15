@@ -19,11 +19,12 @@ ul{
 
 .button_1{
   height:38px;
-  background:#e8491d;
+  background:#366e65;
   border:0;
   padding-left: 20px;
   padding-right:20px;
   color:#ffffff;
+  border-radius: 20%;
 }
 
 .dark{
@@ -40,7 +41,7 @@ header{
   color:#ffffff;
   padding-top:30px;
   min-height:70px;
-  border-bottom:#e8491d 3px solid;
+  border-bottom:#dad4d3 3px solid;
 }
 
 header a{
@@ -64,7 +65,7 @@ header #branding h1{
   margin:0;
 }
 #branding img{
-  border-radius: 70%;
+  border-radius: 60%;
 }
 
 header nav{
@@ -73,7 +74,7 @@ header nav{
 }
 
 header .highlight, header .current a{
-  color:#e8491d;
+  color:#6e8eb3;
   font-weight:bold;
 }
 
