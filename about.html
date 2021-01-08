@@ -5,71 +5,229 @@
   <meta charset="utf-8">
   <meta name="description" content="Affordable and professional web design">
   <meta name="keywords" content="web design, affordable web design, professional web design">
-  <meta name="author" content="Brad Traversy">
+  
   <title>Acme Web Deisgn | About</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="about.css">
+  
+  <script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('myImg');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+    </script>
+    
 </head>
 
 <body>
+
+  
   <header>
     <div class="container">
       <div id="branding">
         <a href="index.html"> <span class="highlight"> </span> <img src="logo.png" width="60" height="30" title="logo"
           alt="logo"></a>
       </div>
+
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li class="current"><a href="about.html">About</a></li>
           <li><a href="Portfolio.html">PORTFOLIO</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
+
+
   </header>
 
   <section id="newsletter">
     <div class="container">
-      <h1>Don't forget to subscribe if you haven't !!</h1>
-      <form>
-        <input type="email" placeholder="Enter Email..." required>
-        <button type="submit" class="button_1">Subscribe</button>
-      </form>
+      
     </div>
   </section>
 
   <section id="main">
     <div class="container">
       <article id="main-col">
-        <h1 class="page-title">About Me</h1>
+        <h2 class="page-title">ABOUT ME</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius auctor lacus nec feugiat. Phasellus sit
-          amet ex ipsum. Praesent pharetra tincidunt tempor. Etiam velit eros, dapibus eget porta in, lacinia et magna.
-          Nam eget eros non orci consectetur congue at ac augue. Proin eget arcu in enim feugiat ultricies. Curabitur
-          maximus metus nec metus pretium viverra at et orci. Integer hendrerit ante ut placerat cursus.
+           My focus is in making mobile-first responsive websites with HTML, JavaScript, PHP, and MySQL (often on top of WordPress or Drupal), I also do bash scripting and linux server administration. I’ve also worked with Java/Android Studio, Objective-C/Xcode, ActionScript3/Flash (and Haxe), and C#/Unity3D<h2 id="passion"> PASSION FOR TECH</h2>
+          
         </p>
-        <p class="dark">
-          Aliquam eget pharetra diam. Nulla placerat lorem at turpis tempor, vel ultrices dui tincidunt. Proin quis
-          egestas lorem. Mauris vehicula lectus odio, sit amet dictum justo feugiat a. Praesent id dictum lacus. Sed
-          ullamcorper id erat ut dictum. Fusce porttitor lorem sapien, in aliquet sapien convallis et. Donec nec mauris
-          nulla. Curabitur cursus semper odio, et hendrerit ante. Nunc at cursus ante. Maecenas gravida ligula ut
-          efficitur suscipit. Nulla id turpis varius, pretium nunc sed, fermentum sem. Sed lacinia nunc non interdum
-          pellentesque.
-        </p>
+        <p class="dark">Excitement with technology is just to know what's next , you be intrigued on what the newer version will be , be in smartphones , personal computers , etc . we use technology to feel more secure with every area in life for both personal and business reasons , that's progress , development and that's how we know we're moving forward . there are variety of reasons that i am so passionate about technology , and the list is endless . but the one that pushes and strikes the most is my thirst for knowledge , learning the latest project management models , programming methodologies and keeping up with new technology , the key to all is the curiosity that i have in technology industry .</p>
       </article>
 
       <aside id="sidebar">
-        <div class="dark">
+        
           <h2>Full Stack Developer.</h2>
-          <img src="smart.jpg" width="370" height="450">
+        
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+          <img src="Mihlali Momoza (1).JPG" width="500" height="500">
+          
+          
         </div>
+        
       </aside>
     </div>
-  </section>
+    <h1 id="Test"> My Testimonials</h1>
+    
+    <div class="container1">
+      <div class="card">
+          <div class="face face1">
+              <div class="content">
+                  <div class="icon">
+                    <img src="img/layla.jpg" width="620" height="240">
+                      <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                  </div>
+              </div>
+          </div>
+          <div class="face face2">
+            
+              <div class="content">
+                
+                  <h3>
+                    
+                      <a href="" target="_blank">_adamdipinto<img src="img/social_linkedin_button_blue.webp" height="38px" width="42px" alt="linked" ></a>
+                  </h3>
+                  <p></p>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+       
+          <div class="face face1">
+           
+              <div class="content">
+                  <div class="icon">
+                    <img src="img/masande.JPG" width="620" height="240">
+                      <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                  </div>
+              </div>
+          </div>
+          <div class="face face2">
+              <div class="content">
+                  <h3>
+                      <a href="https://twitter.com/AdamDipinto" target="_blank">@AdamDipinto</a>
+                  </h3>
+                  <p>This is where I read news and network with different social groups.</p>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <div class="face face1">
+              <div class="content">
+                  <div class="icon">
+                      <i class="fa fa-github-square" aria-hidden="true"></i>
+                  </div>
+              </div>
+          </div>
+          <div class="face face2">
+              <div class="content">
+                  <h3>
+                      <a href="https://github.com/atom888" target="_blank">atom888</a>
+                  </h3>
+                  <p>This is where I share code and work on projects.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</a>
 
-  <footer>
-    <p>Mihlali Momoza, Copyright &copy; 2020</p>
-  </footer>
+<footer class="footer1-distributed">
+
+  <div class="footer2-left">
+
+    <div id="branding">
+      <a href="index.html"> <span class="highlight"> </span> <img src="logo.png" width="60" height="30" title="logo"
+          alt="logo"></a>
+
+    </div>
+
+    <p class="footer3-links">
+      <a href="index.html" class="link-1">Home</a>
+      
+      <a href="Portfolio.html">Blog</a>
+    
+      
+    
+      <a href="about.html">About</a>
+      
+
+      
+      <a href="contact.html">Contact</a>
+    </p>
+
+    <p class="footer4-company-name">Mihlali Momoza copyrights @ 2020</p>
+  </div>
+
+  <div class="footer5-center">
+
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <p><span>W 703 Chithabathwa St</span> Capetown, Khayelitsha</p>
+    </div>
+<br>
+    <div>
+      <i class="fa fa-phone"></i>
+      <p>0630877365</p>
+    </div>
+
+    <br>
+
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:momozamihlali@gmail.com">momozamihlali@gmail.com</a></p>
+    </div>
+
+  </div>
+
+  <div class="footer6-right">
+
+    <p class="footer10-company-about">
+      <span>more about me</span>
+      Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+    </p>
+
+    <div class="footer11-icons">
+     
+      <a href="#"> <img src="img/fera.svg" ></a>
+      <a href="#"> <img src="img/twitt.svg"></a>
+      <a href="#"> <img src="img/social_linkedin_button_blue.webp" height="38px" width="42px" alt="linked" ></a>
+      <a href="#"> <img src="img/insta.svg" height="38px" width="40px" alt="Instagram"></a>
+
+    </div>
+
+  </div>
+
+
+
+</footer>
 </body>
 
 </html>
