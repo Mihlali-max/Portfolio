@@ -5,7 +5,7 @@ body{
   background-color:#f4f4f4;
 }
 
-
+/* Global */
 .container{
   width:80%;
   margin:auto;
@@ -34,7 +34,7 @@ ul{
   margin-bottom:10px;
 }
 
-
+/* Header **/
 header{
   background:#35424a;
   color:#ffffff;
@@ -63,9 +63,6 @@ header #branding{
 header #branding h1{
   margin:0;
 }
-#branding img{
-  border-radius: 70%;
-}
 
 header nav{
   float:right;
@@ -78,43 +75,18 @@ header .highlight, header .current a{
 }
 
 header a:hover{
-  color:#f1e7e7;
+  color:#cccccc;
   font-weight:bold;
 }
 
-
-.container {
-  position: relative;
-  width: 100%;
-}
-.image {
-  opacity: 1;
-  display: block;
-  width: 1830px;
-  height:auto;
-  transition: 5.1s ease;
-  backface-visibility: hidden;
-}
-.middle {
-  transition: 1.5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 34%;
-  left: 47%;
-  transform: translate(-41%, -39%);
-  -ms-transform: translate(-50%, -50%)
-}
-.container:hover .image {
-  opacity: 0.2;
-}
-.container:hover .middle {
-  opacity: 1;
-}
-.text {
-  background-color: #656d65;
-  color: white;
-  font: 20px;
-  padding: 16px 32px;
+/* Showcase */
+#showcase{
+  min-height:400px;
+  background:url('../img/showcase.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align:center;
+  color:#ffffff;
 }
 
 #showcase h1{
@@ -131,7 +103,7 @@ header a:hover{
 #newsletter{
   padding:15px;
   color:#ffffff;
-  background:#23282b
+  background:#35424a
 }
 
 #newsletter h1{
@@ -149,7 +121,7 @@ header a:hover{
   width:250px;
 }
 
-
+/* Boxes */
 #boxes{
   margin-top:20px;
 }
@@ -164,10 +136,8 @@ header a:hover{
 #boxes .box img{
   width:90px;
 }
-#boxes .box :hover{
-  background-color: #7c8d97;
-}
 
+/* Sidebar */
 aside#sidebar{
   float:right;
   width:30%;
@@ -179,13 +149,13 @@ aside#sidebar .quote input, aside#sidebar .quote textarea{
   padding:5px;
 }
 
-
+/* Main-col */
 article#main-col{
   float:left;
   width:65%;
 }
 
-
+/* Services */
 ul#services li{
   list-style: none;
   padding:20px;
@@ -202,7 +172,7 @@ footer{
   text-align: center;
 }
 
-/*media*/
+/* Media Queries */
 @media(max-width: 768px){
   header #branding,
   header nav,
