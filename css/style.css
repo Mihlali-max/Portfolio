@@ -185,6 +185,7 @@ aside#sidebar .quote input, aside#sidebar .quote textarea{
 }
 
 
+
 article#main-col{
   float:left;
   width:65%;
@@ -252,12 +253,23 @@ ul#services li{
   }
 }
 
+#skill{
+  font-weight: 900px;
+  text-align: center;
+  text-shadow: #656d65;
+  font-family:MontSerrat,Tahoma,Arial,sans-serif;
+  font-size: 3.7 rem;
+  color: rgb(36, 34, 34);
+  letter-spacing: 5 rem;
 
+  
+
+}
 
 
 footer{
   padding:20px;
-  margin-top:20px;
+  margin-top:20px; 
   color:#ffffff;
   background-color:black;
   text-align: center;
@@ -296,3 +308,295 @@ footer{
     margin-bottom:5px;
   }
 }
+.search-box{
+  position: absolute;
+  top: 4%;
+  left: 7%;
+  transform: translateY(-50%,-50%);
+  background:#2f3640 ;
+  height:29px ;
+  border-radius: 74px;
+  padding:10px;
+
+
+}
+.search-box:hover > .search-txt{
+  width: 240px;
+  padding:0 6px ;
+}
+.search-box:hover > .search-btn{
+background: white;
+
+
+}
+.search-btn{
+  color: #6e8eb3;
+  float: right;
+  width: 40px;
+  height: 16px;
+  border-radius: 50%;
+  background:#2f3640 ;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  transition: 0.4s;
+}
+.search-txt{
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 26px;
+  width: 0px;
+  height: 15px;
+}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+
+
+
+
+
+
+.footer1-distributed{
+  background: rgb(21, 22, 37);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer1-distributed .footer2-left,
+.footer1-distributed .footer5-center,
+.footer1-distributed .footer6-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer1-distributed .footer2-left{
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer1-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+}
+
+.footer1-distributed h3 span{
+  color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer1-distributed .footer3-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer1-distributed .footer3-links a{
+  display:inline-block;
+  line-height: 1.8;
+  font-weight:400;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer1-distributed .footer10-company-name{
+  color:  #222;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer1-distributed .footer5-center{
+  width: 35%;
+}
+
+.footer1-distributed .footer5-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer1-distributed .footer5-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer1-distributed .footer5-center p{
+  display: inline-block;
+  color: #ffffff;
+  font-weight:400;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer1-distributed .footer5-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer1-distributed .footer5-center p a{
+  color:  lightseagreen;
+  text-decoration: none;;
+}
+
+.footer1-distributed .footer3-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer1-distributed .footer3-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer1-distributed .footer6-right{
+  width: 20%;
+}
+
+.footer1-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer10-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer1-distributed .footer11-icons{
+  margin-top: 25px;
+}
+
+.footer1-distributed .footer11-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #171b1d;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+  .footer11-distributed{
+    font: bold 14px sans-serif;
+  }
+
+  .footer1-distributed .footer2-left,
+  .footer1-distributed .footer5-center,
+  .footer1-distributed .footer6-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer1-distributed .footer5-center i{
+    margin-left: 0;
+  }
+
+}
+#footerimg{
+  border-radius: 60%;
+}
+
+#hr{
+  width: 700px;
+  float: left;
+}
+
+.hr{
+  float: right;
+  width: 700px;
+}
+
+.hrr{
+  width: 700px;
+  float: left;
+}
+
+#html{
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+
+
+}
+#css{
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+#javascript{
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+#Python{
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+#graphic{
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+#sql{
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+#rank{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
