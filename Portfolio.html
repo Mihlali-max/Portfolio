@@ -1,226 +1,263 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Affordable and professional web design">
-	  <meta name="keywords" content="web design, affordable web design, professional web design">
-  	<meta name="author" content="Brad Traversy">
-    <title>Acme Web Deisgn | Services</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="logo.png">
-    <link rel="stylesheet" href="portfolio.css">
-    <script>
-      // Get the modal
-      var modal = document.getElementById('myModal');
-      
-      // Get the image and insert it inside the modal - use its "alt" text as a caption
-      var img = document.getElementById('myImg');
-      var modalImg = document.getElementById("img01");
-      var captionText = document.getElementById("caption");
-      img.onclick = function(){
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        captionText.innerHTML = this.alt;
-      }
-      
-      // Get the <span> element that closes the modal
-      var span = document.getElementsByClassName("close")[0];
-      
-      // When the user clicks on <span> (x), close the modal
-      span.onclick = function() { 
-        modal.style.display = "none";
-      }
-      </script>
-      
 
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div id="branding">
-          <a href="index.html"> <span class="highlight"> </span> <img src="logo.png" width="60" height="30" title="logo" alt="logo"></a>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li class="current"><a href="Portfolio.html">PORTFOLIO</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Affordable and professional web design">
+  <meta name="keywords" content="web design, affordable web design, professional web design">
+  <meta name="author" content="Brad Traversy">
+  <title>Acme Web Deisgn | Services</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="portfolio.css">
+  <script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('myImg');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function () {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+  </script>
+
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <a href="index.html"> <span class="highlight"> </span> <img src="logo.png" width="60" height="30" title="logo"
+            alt="logo"></a>
       </div>
-    </header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li class="current"><a href="Portfolio.html">PORTFOLIO</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section id="newsletter">
-      <div class="container">
-        <h1>Please subscribe if you haven't.</h1>
-        <form>
-          <input type="email" placeholder="Enter Email..." required>
-          <button type="submit" class="button_1">subscribe</button>
-        </form>
-      </div>
-    </section>
+  <section id="newsletter">
+    <div class="container">
+      <h1>Please subscribe if you haven't.</h1>
+      <form>
+        <input type="email" placeholder="Enter Email..." required>
+        <button type="submit" class="button_1">subscribe</button>
+      </form>
+    </div>
+  </section>
 
-    <section id="main">
-      <div class="container">
-        <article id="main-col">
-          <h1 class="page-title">Portfolio</h1>
-          <ul id="services">
+  <section id="main">
+    <div class="container">
+      <article id="main-col">
+        <h1 class="page-title">Portfolio</h1>
+        <ul id="services">
 
-            <li>
-              <h2>Lotto Application</h2>
-<p>In this challenge i  wrote a Python program that automatically generates six random numbers (from 1 to 50) and display them on the screen, sorted in ascending order..</p>
-<p>Games of chance have a way of exciting us. We play them hoping the odds will be in our favor.
+          <li>
+            <h2>Lotto Application</h2>
+            <p>In this challenge i wrote a Python program that automatically generates six random numbers (from 1 to 50)
+              and display them on the screen, sorted in ascending order..</p>
+            <p>Games of chance have a way of exciting us. We play them hoping the odds will be in our favor.
 
-  The very first program that I would write would be a Lottery Simulator. It was based on a lottery were you had to pick 6 numbers on a sheet of numbers from 1 to 36.
-  
-  The winning numbers were announced each week in a TV game show..</p>
-<p>Now with my use of Python i managed to write a code that can actually display your results on your screen without waiting for TV prodcast .</p>
+              The very first program that I would write would be a Lottery Simulator. It was based on a lottery were you
+              had to pick 6 numbers on a sheet of numbers from 1 to 36.
 
-<img id="myImg" src="img/lottto.png" alt="Northern Lights, Norway" width="300" height="200">
+              The winning numbers were announced each week in a TV game show..</p>
+            <p>Now with my use of Python i managed to write a code that can actually display your results on your screen
+              without waiting for TV prodcast .</p>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
-</div>
-              
-            </li>
-            <li>
-              <h2>Music-Playlist App</h2>
-              <P>Listening to music is a hobby of almost every person you meet around daily, for playing this music we need to have installed a music player in our device, each and every operating system whether it is Windows, Linux, Mac or even Android, Apple IOS also consist of a music player for playing your favorite songs.
+            <img id="myImg" src="img/lottto.png" alt="Northern Lights, Norway" width="300" height="200">
 
-                So In this tutorial, we will be learning how to create a music player from scratch using the Python Programming Language. As we all know Python has a very rich library support, so from the bunch of libraries we are going to use some of them to build our GUI based music player. </P>
-              <p>Here i'm using Python to Create a  Playlist of the Samples on an Album
-                Trade in for-loops and random samples for drum loops and soul samples</p>
-              <p>Here's my Github link if you want know how i've done it
-                <a href="https://github.com/Mihlali-max/python-exercise-and-tasks/blob/main/music.py"></a>
-              </p>
-            <a  href="https://github.com/Mihlali-max/python-exercise-and-tasks/blob/main/music.py"> <img id="myImg" src="img/playlist.jpeg" alt="Northern Lights, Norway" width="300" height="200"></a>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="img01">
+              <div id="caption"></div>
+            </div>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
-</div>
-            </li>
+          </li>
+          <li>
+            <h2>Music-Playlist App</h2>
+            <P>Listening to music is a hobby of almost every person you meet around daily, for playing this music we
+              need to have installed a music player in our device, each and every operating system whether it is
+              Windows, Linux, Mac or even Android, Apple IOS also consist of a music player for playing your favorite
+              songs.
 
-            <li>
-              <h2>Weather Application</h2>
-              <p>Information about weather is very important specially if you want to anticipate weather changes that can affect businesses such as street hawkers, farming, aviation, entertainment etc. Having information about weather beforehand can help people prepare for it to avoid losses.
+              So In this tutorial, we will be learning how to create a music player from scratch using the Python
+              Programming Language. As we all know Python has a very rich library support, so from the bunch of
+              libraries we are going to use some of them to build our GUI based music player. </P>
+            <p>Here i'm using Python to Create a Playlist of the Samples on an Album
+              Trade in for-loops and random samples for drum loops and soul samples</p>
+            <p>Here's my Github link if you want know how i've done it
+              <a href="https://github.com/Mihlali-max/python-exercise-and-tasks/blob/main/music.py"></a>
+            </p>
+            <a href="https://github.com/Mihlali-max/python-exercise-and-tasks/blob/main/music.py"> <img id="myImg"
+                src="img/playlist.jpeg" alt="Northern Lights, Norway" width="300" height="200"></a>
 
-                For this purpose, it is important to have an application that can let us know about weather alerts and possibly store the weather data in a database for analytics.
-                
-                In this article, I present my work on creating a weather forecast app with Python programming language using Openweathermaps API and MongoDB. This app downloads 5 day-3 hour separated weather forecast data for defined cities, in this case, Karachi, London, Mumbai and Utah. It stores the forecast data in MongoDB and displays weather alerts such as snow, rain or freezing temperatures if present in forecast for those cities. It also creates a weather map for each of the forecast and shows weather forecast on a map.</p>
-         <a href=""     ><img id="myImg" src="img/weather.jpeg" alt="Northern Lights, Norway" width="300" height="200"></a>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="img01">
+              <div id="caption"></div>
+            </div>
+          </li>
 
-              <h2>Calculator</h2>
-              <p>You may think you know what a calculator is. But it's not until you begin to code something that you get to see just how complex it can be. So in this article i built a basic non-scientific calculator using plain old JavaScript.</p>
-          <a href="https://javamihlacalculator.netlify.app/" >   <img id="myImg" src="img/calculator_solar_calculator_count_239676.jpeg" alt="Northern Lights, Norway" width="300" height="200"></a>
+          <li>
+            <h2>Weather Application</h2>
+            <p>Information about weather is very important specially if you want to anticipate weather changes that can
+              affect businesses such as street hawkers, farming, aviation, entertainment etc. Having information about
+              weather beforehand can help people prepare for it to avoid losses.
+
+              For this purpose, it is important to have an application that can let us know about weather alerts and
+              possibly store the weather data in a database for analytics.
+
+              In this article, I present my work on creating a weather forecast app with Python programming language
+              using Openweathermaps API and MongoDB. This app downloads 5 day-3 hour separated weather forecast data for
+              defined cities, in this case, Karachi, London, Mumbai and Utah. It stores the forecast data in MongoDB and
+              displays weather alerts such as snow, rain or freezing temperatures if present in forecast for those
+              cities. It also creates a weather map for each of the forecast and shows weather forecast on a map.</p>
+            <a href=""><img id="myImg" src="img/weather.jpeg" alt="Weather app" width="300"
+                height="200"></a>
+
+            <h2>Calculator</h2>
+            <p>You may think you know what a calculator is. But it's not until you begin to code something that you get
+              to see just how complex it can be. So in this article i built a basic non-scientific calculator using
+              plain old JavaScript.</p>
+            <a href="https://javamihlacalculator.netlify.app/"> <img id="myImg"
+                src="img/calculator_solar_calculator_count_239676.jpeg" alt="calculator image" width="300"
+                height="200"></a>
 
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
-</div>
-            </li>
-          </ul>
-        </article>
+                <h2>Swegga Fashion site</h2>
+                <p>Calculator use
 
-        <aside id="sidebar">
-          <div class="dark">
-            <h3>Get in touch</h3>
-            <form class="quote" action="https://formspree.io/f/mvovdanq" method="POST">
-  						<div>
-  							<label>Name</label><br>
-  							<input type="text" placeholder="Name" name="name" >
-  						</div>
-  						<div>
-  							<label>Email</label><br>
-  							<input type="email" placeholder="Email Address" name="address">
-  						</div>
-  						<div>
-  							<label>Message</label><br>
-  							<textarea placeholder="Message" name="name"></textarea>
-  						</div>
-  						<button class="button_1" type="submit">Send</button>
-					</form>
-          </div>
-        </aside>
-      </div>
-    </section>
+                  in sales, it is often necessary to calculate the selling price based on the known cost of an item and the desired gross margin of the store or company. You can calculate the selling price you need to establish (revenue) in order to achieve a desired gross margin on a known product cost , in this article i built a basic price calculator using JavaScript..</p>
+                <a href="https://sweggasite.netlify.app/"> <img id="myImg"
+                    src="img/swegga.jpeg" alt="swegga image" width="300"
+                    height="200"></a>
+    
 
-    <footer class="footer1-distributed">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="img01">
+              <div id="caption"></div>
+            </div>
+          </li>
+        </ul>
+      </article>
 
-      <div class="footer2-left">
-
-        <div id="branding">
-          <a href="index.html"> <span class="highlight"> </span> <img src="logo.png" width="60" height="30" title="logo"
-              alt="logo"></a>
-
+      <aside id="sidebar">
+        <div class="dark">
+          <h3>Get in touch</h3>
+          <form class="quote" action="https://formspree.io/f/mvovdanq" method="POST">
+            <div>
+              <label>Name</label><br>
+              <input type="text" placeholder="Name" name="name">
+            </div>
+            <div>
+              <label>Email</label><br>
+              <input type="email" placeholder="Email Address" name="address">
+            </div>
+            <div>
+              <label>Message</label><br>
+              <textarea placeholder="Message" name="name"></textarea>
+            </div>
+            <button class="button_1" type="submit">Send</button>
+          </form>
         </div>
+      </aside>
+    </div>
+  </section>
 
-        <p class="footer3-links">
-          <a href="index.html" class="link-1">Home</a>
-          
-          <a href="Portfolio.html">Blog</a>
-        
-          
-        
-          <a href="about.html">About</a>
-          
+  <footer class="footer1-distributed">
 
-          
-          <a href="contact.html">Contact</a>
-        </p>
+    <div class="footer2-left">
 
-        <p class="footer4-company-name">Mihlali Momoza copyrights @ 2020</p>
-      </div>
-
-      <div class="footer5-center">
-
-        <div>
-          <i class="fa fa-map-marker"></i>
-          <p><span>W 703 Chithabathwa St</span> Capetown, Khayelitsha</p>
-        </div>
-<br>
-        <div>
-          <i class="fa fa-phone"></i>
-          <p>0630877365</p>
-        </div>
-
-        <br>
-
-        <div>
-          <i class="fa fa-envelope"></i>
-          <p><a href="mailto:momozamihlali@gmail.com">momozamihlali@gmail.com</a></p>
-        </div>
+      <div id="branding">
+        <a href="index.html"> <span class="highlight"> </span> <img src="logo.png" width="60" height="30" title="logo"
+            alt="logo"></a>
 
       </div>
 
-      <div class="footer6-right">
+      <p class="footer3-links">
+        <a href="index.html" class="link-1">Home</a>
 
-        <p class="footer10-company-about">
-          I create content centered on technology, marketing, strategies, and trends that would help grow your business or brand today.
-        </p>
+        <a href="Portfolio.html">Blog</a>
 
-        <div class="footer11-icons">
-         
-          <a href="https://www.facebook.com/"> <img src="img/fera.svg" ></a>
-          <a href="https://github.com/Mihlali-max"> <img src="img/github-logo.png"height="38px" width="42px" alt="linked" ></a>
-          <a href="https://www.linkedin.com/in/mihlali-momoza-3004011bb/"> <img src="img/social_linkedin_button_blue.webp" height="38px" width="42px" alt="linked" ></a>
-          <a href="https://www.instagram.com/"> <img src="img/insta.svg" height="38px" width="40px" alt="Instagram"></a>
 
-        </div>
+
+        <a href="about.html">About</a>
+
+
+
+        <a href="contact.html">Contact</a>
+      </p>
+
+      <p class="footer4-company-name">Mihlali Momoza copyrights @ 2020</p>
+    </div>
+
+    <div class="footer5-center">
+
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>W 703 Chithabathwa St</span> Capetown, Khayelitsha</p>
+      </div>
+      <br>
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>0630877365</p>
+      </div>
+
+      <br>
+
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:momozamihlali@gmail.com">momozamihlali@gmail.com</a></p>
+      </div>
+
+    </div>
+
+    <div class="footer6-right">
+
+      <p class="footer10-company-about">
+        I create content centered on technology, marketing, strategies, and trends that would help grow your business or
+        brand today.
+      </p>
+
+      <div class="footer11-icons">
+
+        <a href="https://www.facebook.com/"> <img src="img/fera.svg"></a>
+        <a href="https://github.com/Mihlali-max"> <img src="img/github-logo.png" height="38px" width="42px"
+            alt="linked"></a>
+        <a href="https://www.linkedin.com/in/mihlali-momoza-3004011bb/"> <img src="img/social_linkedin_button_blue.webp"
+            height="38px" width="42px" alt="linked"></a>
+        <a href="https://www.instagram.com/"> <img src="img/insta.svg" height="38px" width="40px" alt="Instagram"></a>
 
       </div>
 
+    </div>
 
 
-    </footer>
-  </body>
+
+  </footer>
+</body>
+
 </html>
