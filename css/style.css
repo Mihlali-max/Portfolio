@@ -95,7 +95,7 @@ header a:hover{
 .image {
   opacity: 1;
   display: block;
-  width: 1830px;
+  width: 100%;
   height:auto;
   transition: 5.1s ease;
   backface-visibility: hidden;
@@ -521,7 +521,7 @@ background: white;
   margin-bottom: 5px;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
+
 
 @media (max-width: 880px) {
 
