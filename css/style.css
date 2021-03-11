@@ -6,6 +6,8 @@ body{
 }
 
 
+
+
 .container{
   width:80%;
   margin:auto;
@@ -95,20 +97,26 @@ header a:hover{
 .image {
   opacity: 1;
   display: block;
-  width: 1870px;
+  width: 100%;
   height:auto;
   transition: 5.1s ease;
   backface-visibility: hidden;
 }
+
 .middle {
   transition: 1.5s ease;
   opacity: 0;
   position: absolute;
-  top: 34%;
-  left: 47%;
+  top: 40%;
+  left: 45%;
   transform: translate(-41%, -39%);
-  -ms-transform: translate(-50%, -50%)
+  -ms-transform: translate(-50%, -50%);
+  float: none;
+  text-align: center;
+  width: 44%;
 }
+
+
 .container:hover .image {
   opacity: 0.2;
 }
@@ -120,6 +128,7 @@ header a:hover{
   color: white;
   font: 20px;
   padding: 16px 32px;
+  width: 100%;
 }
 
 #showcase h1{
@@ -352,7 +361,7 @@ background: white;
   transition: 0.4s;
   line-height: 26px;
   width: 0px;
-  height: 15px;
+  height: 13px;
 }
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
 
@@ -565,6 +574,8 @@ background: white;
 .loading {
   display: flex;
   flex-direction: row;
+  
+
 }
 .loading__letter {
   font-size: 40px;
@@ -576,6 +587,7 @@ background: white;
   animation-name: bounce;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+  text-align: center;
 }
 
 .loading__letter:nth-child(2) {
